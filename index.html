@@ -64,19 +64,19 @@
     <section class="statistics">
         <div class="stats-container">
             <div class="stat-item">
-                <div class="stat-number">50+</div>
+                <div class="stat-number">100+</div>
                 <div class="stat-label">AI Tools</div>
             </div>
             <div class="stat-item">
-                <div class="stat-number">35+</div>
+                <div class="stat-number">50+</div>
                 <div class="stat-label">AI Models</div>
             </div>
             <div class="stat-item">
-                <div class="stat-number">25K+</div>
+                <div class="stat-number">75K+</div>
                 <div class="stat-label">Comparisons</div>
             </div>
             <div class="stat-item">
-                <div class="stat-number">8K+</div>
+                <div class="stat-number">15K+</div>
                 <div class="stat-label">Users</div>
             </div>
         </div>
@@ -148,7 +148,114 @@
                     <option value="Eleven Labs">Eleven Labs</option>
                     <option value="Suno">Suno</option>
                     <option value="Midjourney">Midjourney</option>
+                    <option value="Alibaba">Alibaba</option>
+                    <option value="Reka AI">Reka AI</option>
+                    <option value="Matt Shumer">Matt Shumer</option>
+                    <option value="Black Forest Labs">Black Forest Labs</option>
+                    <option value="NVIDIA">NVIDIA</option>
                 </select>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comparisons Builder Section -->
+    <section class="comparison-builder" id="compare">
+        <div class="comparison-builder-container">
+            <h2 class="builder-title">AI Model Comparisons Builder</h2>
+            <p class="builder-subtitle">Create detailed side-by-side comparisons of AI models to make informed decisions</p>
+            
+            <div class="builder-content">
+                <div class="builder-left">
+                    <div class="builder-search">
+                        <h3>Add Models to Compare</h3>
+                        <div class="builder-search-bar">
+                            <i class="fas fa-search"></i>
+                            <input type="text" id="builderSearchInput" placeholder="Search models to add..." aria-label="Search models for comparison">
+                        </div>
+                        <div class="builder-filters">
+                            <select id="builderTypeFilter" aria-label="Filter by type">
+                                <option value="">All Types</option>
+                                <option value="Language Model">Language Model</option>
+                                <option value="Vision Model">Vision Model</option>
+                                <option value="Audio Model">Audio Model</option>
+                                <option value="Multimodal">Multimodal</option>
+                            </select>
+                            <select id="builderCompanyFilter" aria-label="Filter by company">
+                                <option value="">All Companies</option>
+                                <option value="OpenAI">OpenAI</option>
+                                <option value="Google">Google</option>
+                                <option value="Anthropic">Anthropic</option>
+                                <option value="Meta">Meta</option>
+                                <option value="Microsoft">Microsoft</option>
+                                <option value="Mistral AI">Mistral AI</option>
+                            </select>
+                        </div>
+                        <div class="available-models" id="availableModels">
+                            <!-- Available models will be populated here -->
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="builder-right">
+                    <div class="selected-models">
+                        <h3>Selected Models <span id="selectedCount">(0/5)</span></h3>
+                        <div class="selected-models-list" id="selectedModelsList">
+                            <div class="empty-state">
+                                <i class="fas fa-plus-circle"></i>
+                                <p>Select models from the left to start comparing</p>
+                            </div>
+                        </div>
+                        <div class="builder-actions">
+                            <button class="btn btn-primary" id="generateComparison" onclick="generateDetailedComparison()" disabled>
+                                <i class="fas fa-chart-bar"></i>
+                                Generate Comparison
+                            </button>
+                            <button class="btn btn-secondary" id="clearComparison" onclick="clearBuilderSelection()">
+                                <i class="fas fa-trash"></i>
+                                Clear All
+                            </button>
+                            <button class="btn btn-secondary" id="saveComparison" onclick="saveComparison()" disabled>
+                                <i class="fas fa-save"></i>
+                                Save Comparison
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Detailed Comparison Results Section -->
+    <section class="comparison-results" id="comparisonResults" style="display: none;">
+        <div class="comparison-results-container">
+            <div class="results-header">
+                <h2>Detailed Model Comparison</h2>
+                <button class="btn btn-secondary" onclick="hideComparisonResults()">
+                    <i class="fas fa-times"></i>
+                    Close
+                </button>
+            </div>
+            <div class="comparison-charts">
+                <div class="chart-section">
+                    <h3>Performance Comparison</h3>
+                    <div class="performance-chart" id="performanceChart">
+                        <!-- Chart will be populated here -->
+                    </div>
+                </div>
+                <div class="chart-section">
+                    <h3>Pricing Comparison</h3>
+                    <div class="pricing-chart" id="pricingChart">
+                        <!-- Chart will be populated here -->
+                    </div>
+                </div>
+            </div>
+            <div class="detailed-comparison-table">
+                <h3>Detailed Specifications</h3>
+                <div class="table-container">
+                    <table class="advanced-comparison-table" id="advancedComparisonTable">
+                        <!-- Advanced comparison table will be populated here -->
+                    </table>
+                </div>
             </div>
         </div>
     </section>
