@@ -151,6 +151,381 @@ const aiModelsData = [
         },
         features: ["Artistic Quality", "Style Versatility", "Creative", "Community"],
         releaseDate: "2024-01-01"
+    },
+    {
+        id: 11,
+        name: "Claude 3 Haiku",
+        company: "Anthropic",
+        type: "Language Model",
+        description: "Fast and lightweight AI model optimized for speed and efficiency. Perfect for quick tasks and high-volume applications.",
+        specs: {
+            parameters: "Unknown",
+            contextLength: "200K",
+            pricing: "$0.0003/1K",
+            performance: "82%"
+        },
+        features: ["Ultra Fast", "Cost Efficient", "Lightweight", "High Volume"],
+        releaseDate: "2024-03-01"
+    },
+    {
+        id: 12,
+        name: "Gemini 1.5 Pro",
+        company: "Google",
+        type: "Multimodal",
+        description: "Google's latest multimodal AI with extended context length and improved reasoning capabilities across text, images, and code.",
+        specs: {
+            parameters: "Unknown",
+            contextLength: "2M",
+            pricing: "$0.007/1K",
+            performance: "92%"
+        },
+        features: ["Extended Context", "Multimodal", "Advanced Reasoning", "Long Documents"],
+        releaseDate: "2024-02-15"
+    },
+    {
+        id: 13,
+        name: "Grok-1",
+        company: "xAI",
+        type: "Language Model",
+        description: "Open-source language model from xAI with real-time information access and unique conversational style.",
+        specs: {
+            parameters: "314B",
+            contextLength: "8K",
+            pricing: "$5/month",
+            performance: "86%"
+        },
+        features: ["Real-time Info", "Open Source", "Conversational", "Humor"],
+        releaseDate: "2024-03-17"
+    },
+    {
+        id: 14,
+        name: "Mixtral 8x7B",
+        company: "Mistral AI",
+        type: "Language Model",
+        description: "Sparse mixture of experts model offering excellent performance with efficient inference and multilingual capabilities.",
+        specs: {
+            parameters: "46.7B",
+            contextLength: "32K",
+            pricing: "$0.0007/1K",
+            performance: "88%"
+        },
+        features: ["Mixture of Experts", "Multilingual", "Efficient", "Open Source"],
+        releaseDate: "2023-12-11"
+    },
+    {
+        id: 15,
+        name: "Command R+",
+        company: "Cohere",
+        type: "Language Model",
+        description: "Enterprise-focused language model with strong RAG capabilities and tool use for business applications.",
+        specs: {
+            parameters: "104B",
+            contextLength: "128K",
+            pricing: "$0.003/1K",
+            performance: "90%"
+        },
+        features: ["RAG Optimized", "Tool Use", "Enterprise", "Search"],
+        releaseDate: "2024-04-04"
+    },
+    {
+        id: 16,
+        name: "Stable Diffusion XL",
+        company: "Stability AI",
+        type: "Vision Model",
+        description: "High-resolution image generation model with improved prompt adherence and photorealistic outputs.",
+        specs: {
+            parameters: "3.5B",
+            contextLength: "N/A",
+            pricing: "$0.002/image",
+            performance: "91%"
+        },
+        features: ["High Resolution", "Photorealistic", "Open Source", "Fine-tunable"],
+        releaseDate: "2023-07-26"
+    },
+    {
+        id: 17,
+        name: "GPT-4 Omni",
+        company: "OpenAI",
+        type: "Multimodal",
+        description: "OpenAI's flagship multimodal model with native audio, vision, and text capabilities in a single model.",
+        specs: {
+            parameters: "Unknown",
+            contextLength: "128K",
+            pricing: "$0.005/1K",
+            performance: "96%"
+        },
+        features: ["Native Multimodal", "Audio Support", "Real-time", "Vision"],
+        releaseDate: "2024-05-13"
+    },
+    {
+        id: 18,
+        name: "Llama 3 70B",
+        company: "Meta",
+        type: "Language Model",
+        description: "Meta's latest open-source language model with significantly improved performance and safety measures.",
+        specs: {
+            parameters: "70B",
+            contextLength: "8K",
+            pricing: "Free",
+            performance: "91%"
+        },
+        features: ["Open Source", "Safety Focused", "Multilingual", "Commercial Use"],
+        releaseDate: "2024-04-18"
+    },
+    {
+        id: 19,
+        name: "Titan Text Express",
+        company: "Amazon",
+        type: "Language Model",
+        description: "Amazon's enterprise language model optimized for text generation and summarization tasks.",
+        specs: {
+            parameters: "Unknown",
+            contextLength: "8K",
+            pricing: "$0.0008/1K",
+            performance: "85%"
+        },
+        features: ["Enterprise", "AWS Integration", "Cost Effective", "Summarization"],
+        releaseDate: "2023-09-28"
+    },
+    {
+        id: 20,
+        name: "GitHub Copilot",
+        company: "Microsoft",
+        type: "Language Model",
+        description: "AI coding assistant trained on billions of lines of code to help developers write better code faster.",
+        specs: {
+            parameters: "Unknown",
+            contextLength: "8K",
+            pricing: "$10/month",
+            performance: "89%"
+        },
+        features: ["Code Generation", "IDE Integration", "Multiple Languages", "Context Aware"],
+        releaseDate: "2021-10-29"
+    },
+    {
+        id: 21,
+        name: "Perplexity Pro",
+        company: "Perplexity",
+        type: "Language Model",
+        description: "AI-powered search and answer engine with real-time information access and source citations.",
+        specs: {
+            parameters: "Unknown",
+            contextLength: "16K",
+            pricing: "$20/month",
+            performance: "88%"
+        },
+        features: ["Real-time Search", "Source Citations", "Research", "Factual"],
+        releaseDate: "2024-01-04"
+    },
+    {
+        id: 22,
+        name: "Claude 3.5 Sonnet",
+        company: "Anthropic",
+        type: "Language Model",
+        description: "Enhanced version of Claude 3 Sonnet with improved coding capabilities and reasoning performance.",
+        specs: {
+            parameters: "Unknown",
+            contextLength: "200K",
+            pricing: "$0.003/1K",
+            performance: "93%"
+        },
+        features: ["Enhanced Coding", "Improved Reasoning", "Artifacts", "Long Context"],
+        releaseDate: "2024-06-20"
+    },
+    {
+        id: 23,
+        name: "Mistral Large",
+        company: "Mistral AI",
+        type: "Language Model",
+        description: "Mistral's flagship model with top-tier reasoning capabilities and multilingual support.",
+        specs: {
+            parameters: "Unknown",
+            contextLength: "32K",
+            pricing: "$0.008/1K",
+            performance: "91%"
+        },
+        features: ["Top Performance", "Multilingual", "Function Calling", "JSON Mode"],
+        releaseDate: "2024-02-26"
+    },
+    {
+        id: 24,
+        name: "Gemini 1.5 Flash",
+        company: "Google",
+        type: "Multimodal",
+        description: "Lightweight multimodal model optimized for speed and efficiency with long context support.",
+        specs: {
+            parameters: "Unknown",
+            contextLength: "1M",
+            pricing: "$0.0005/1K",
+            performance: "87%"
+        },
+        features: ["Ultra Fast", "Long Context", "Multimodal", "Cost Efficient"],
+        releaseDate: "2024-05-14"
+    },
+    {
+        id: 25,
+        name: "Stable Video Diffusion",
+        company: "Stability AI",
+        type: "Vision Model",
+        description: "AI model for generating high-quality video content from text prompts and images.",
+        specs: {
+            parameters: "1.2B",
+            contextLength: "N/A",
+            pricing: "$0.04/second",
+            performance: "88%"
+        },
+        features: ["Video Generation", "Text-to-Video", "Image-to-Video", "Open Source"],
+        releaseDate: "2023-11-21"
+    },
+    {
+        id: 26,
+        name: "Jurassic-2 Ultra",
+        company: "AI21 Labs",
+        type: "Language Model",
+        description: "Advanced language model with strong instruction following and creative writing capabilities.",
+        specs: {
+            parameters: "178B",
+            contextLength: "8K",
+            pricing: "$0.015/1K",
+            performance: "86%"
+        },
+        features: ["Instruction Following", "Creative Writing", "Customizable", "Task Specific"],
+        releaseDate: "2023-03-09"
+    },
+    {
+        id: 27,
+        name: "Deepseek Coder",
+        company: "DeepSeek",
+        type: "Language Model",
+        description: "Specialized coding model trained on vast amounts of code with strong programming capabilities.",
+        specs: {
+            parameters: "33B",
+            contextLength: "16K",
+            pricing: "$0.0014/1K",
+            performance: "90%"
+        },
+        features: ["Code Specialized", "Multiple Languages", "Open Source", "Fill-in-Middle"],
+        releaseDate: "2023-11-20"
+    },
+    {
+        id: 28,
+        name: "Falcon-180B",
+        company: "TII",
+        type: "Language Model",
+        description: "Large open-source language model with strong performance across various tasks and languages.",
+        specs: {
+            parameters: "180B",
+            contextLength: "2K",
+            pricing: "Free",
+            performance: "87%"
+        },
+        features: ["Open Source", "Large Scale", "Multilingual", "Commercial Use"],
+        releaseDate: "2023-09-06"
+    },
+    {
+        id: 29,
+        name: "Llama 3 405B",
+        company: "Meta",
+        type: "Language Model",
+        description: "Meta's largest open-source language model with state-of-the-art performance across benchmarks.",
+        specs: {
+            parameters: "405B",
+            contextLength: "8K",
+            pricing: "Free",
+            performance: "95%"
+        },
+        features: ["Largest Open Source", "SOTA Performance", "Multilingual", "Research"],
+        releaseDate: "2024-07-23"
+    },
+    {
+        id: 30,
+        name: "Phi-3 Medium",
+        company: "Microsoft",
+        type: "Language Model",
+        description: "Compact but powerful language model optimized for edge deployment and efficiency.",
+        specs: {
+            parameters: "14B",
+            contextLength: "128K",
+            pricing: "$0.0012/1K",
+            performance: "84%"
+        },
+        features: ["Edge Optimized", "Compact", "Long Context", "Efficient"],
+        releaseDate: "2024-04-23"
+    },
+    {
+        id: 31,
+        name: "Dbrx",
+        company: "Databricks",
+        type: "Language Model",
+        description: "Enterprise-focused mixture of experts model with strong performance on business tasks.",
+        specs: {
+            parameters: "132B",
+            contextLength: "32K",
+            pricing: "$0.0075/1K",
+            performance: "89%"
+        },
+        features: ["Enterprise", "Mixture of Experts", "Business Tasks", "Data Analytics"],
+        releaseDate: "2024-03-27"
+    },
+    {
+        id: 32,
+        name: "Emu Video",
+        company: "Meta",
+        type: "Vision Model",
+        description: "AI model for generating and editing videos from text descriptions with high quality output.",
+        specs: {
+            parameters: "Unknown",
+            contextLength: "N/A",
+            pricing: "Research",
+            performance: "86%"
+        },
+        features: ["Video Generation", "Text-to-Video", "Video Editing", "Research"],
+        releaseDate: "2023-11-16"
+    },
+    {
+        id: 33,
+        name: "Eleven Labs v2",
+        company: "Eleven Labs",
+        type: "Audio Model",
+        description: "Advanced text-to-speech model with natural voice synthesis and voice cloning capabilities.",
+        specs: {
+            parameters: "Unknown",
+            contextLength: "N/A",
+            pricing: "$5/month",
+            performance: "94%"
+        },
+        features: ["Voice Cloning", "Natural Speech", "Multilingual", "Emotion Control"],
+        releaseDate: "2024-01-30"
+    },
+    {
+        id: 34,
+        name: "Suno AI v3",
+        company: "Suno",
+        type: "Audio Model",
+        description: "AI music generation model that creates full songs from text prompts with vocals and instruments.",
+        specs: {
+            parameters: "Unknown",
+            contextLength: "N/A",
+            pricing: "$10/month",
+            performance: "91%"
+        },
+        features: ["Music Generation", "Vocals", "Instruments", "Full Songs"],
+        releaseDate: "2024-03-21"
+    },
+    {
+        id: 35,
+        name: "Codestral",
+        company: "Mistral AI",
+        type: "Language Model",
+        description: "Specialized coding model with strong performance in code generation and completion tasks.",
+        specs: {
+            parameters: "22B",
+            contextLength: "32K",
+            pricing: "$0.001/1K",
+            performance: "89%"
+        },
+        features: ["Code Generation", "80+ Languages", "Fill-in-Middle", "Fast Inference"],
+        releaseDate: "2024-05-29"
     }
 ];
 
